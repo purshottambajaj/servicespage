@@ -1,0 +1,81 @@
+<html>
+  <head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    #assignment {
+      background: linear-gradient(to bottom right, #5C2D91 50%, #F2F2F2 50%);
+      padding: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="assignment" class="p-8">
+    <div class="text-center text-4xl font-bold mb-8 text-white">Our Services</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="group relative bg-white shadow-lg rounded-lg p-6 text-center hover:cursor-pointer">
+        <div class="mx-auto w-16 h-16 mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+          
+          <img src="https://cdn-icons-png.freepik.com/256/3481/3481092.png?semt=ais_hybrid">
+       </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Emergency Plumbing Services</h3>
+        <p class="text-gray-500 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights weekend  and Holidays</p>
+        <a href="#" class="text-purple-800 font-semibold">Explore this service ></a>
+      </div>
+
+      
+      <div class="group relative bg-white shadow-lg rounded-lg p-6 text-center hover:cursor-pointer">
+        <div class="mx-auto w-16 h-16 mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+          <img src="https://cdn-icons-png.freepik.com/256/15820/15820262.png?semt=ais_hybrid">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Plumbing and Drains</h3>
+        <p class="text-gray-500 mb-4">As the largest plumbing and drain service company , we make thousands of repairs every day.</p>
+        <a href="#" class="text-purple-800 font-semibold">Explore this service ></a>
+      </div>
+
+      
+      <div class="group relative bg-white shadow-lg rounded-lg p-6 text-center hover:cursor-pointer">
+        <div class="mx-auto w-16 h-16 mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+          <img src="https://cdn-icons-png.freepik.com/256/8967/8967656.png?semt=ais_hybrid">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Water Damage</h3>
+        <p class="text-gray-500 mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+        <a href="#" class="text-purple-800 font-semibold">Explore this service →</a>
+      </div>
+
+      <div class="group relative bg-white shadow-lg rounded-lg p-6 text-center hover:cursor-pointer">
+        <div class="mx-auto w-16 h-16 mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+          <img src="https://cdn-icons-png.freepik.com/256/9262/9262727.png?semt=ais_hybrid">
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Water Heaters</h3>
+        <p class="text-gray-500 mb-4">Trust Roto-Rooter for repair and replacement gas,electric and  tankless water heaters.</p>
+        <a href="#" class="text-purple-800 font-semibold">Explore this service →</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    document.querySelectorAll('.group').forEach((card) => {
+      card.addEventListener('mouseenter', () => {
+        anime({
+          targets: card,
+          rotateY: '1turn',
+          duration: 800,
+          easing: 'easeInOutQuad',
+          complete: function () {
+            anime({
+              targets: card,
+              rotateY: '0turn',
+              duration: 0 
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
